@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+/* HEADER */
+.header {
+  background: #131921;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f3c26b;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #3b2f2f, #1c1c1c);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f3c26b;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 15px 0 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b12704;
+}
+
+.buy {
+  display: block;
+  margin-top: 12px;
+  background: #ffd814;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  background: #131921;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
