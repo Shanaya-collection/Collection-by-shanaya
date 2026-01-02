@@ -8,59 +8,52 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="header">
-  <div class="logo">Collection by Shanaya</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Sarees</a>
-    <a href="#">New Arrivals</a>
-    <a href="#">Contact</a>
-  </nav>
+  <h1>Collection by Shanaya Sarees</h1>
+  <p>Premium Indian Sarees</p>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Premium Indian Sarees</h1>
-  <p>Elegance • Tradition • Luxury</p>
-  <a href="#products" class="btn">Shop Now</a>
-</section>
+<section class="product">
 
-<!-- PRODUCTS -->
-<section class="products" id="products">
-  <h2>Our Collection</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x380" alt="Saree">
-      <h3>Banarasi Silk Saree</h3>
-      <p class="price">₹2,999</p>
-      <a class="buy" href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
+  <div class="gallery">
+    <img src="saree1.avif" id="mainImage">
+    <div class="thumbs">
+      <img src="saree1.avif" onclick="changeImg(this.src)">
+      <img src="saree2.avif" onclick="changeImg(this.src)">
+      <img src="saree3.avif" onclick="changeImg(this.src)">
+      <img src="saree4.avif" onclick="changeImg(this.src)">
     </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x380" alt="Saree">
-      <h3>Cotton Handloom Saree</h3>
-      <p class="price">₹1,499</p>
-      <a class="buy" href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x380" alt="Saree">
-      <h3>Designer Party Saree</h3>
-      <p class="price">₹3,499</p>
-      <a class="buy" href="https://wa.me/91XXXXXXXXXX">Buy on WhatsApp</a>
-    </div>
-
   </div>
+
+  <div class="details">
+    <h2>Banarasi Silk Saree</h2>
+    <p class="price">₹2,999</p>
+    <p class="desc">
+      Premium quality Banarasi silk saree with elegant weaving.
+      Perfect for weddings and festive occasions.
+    </p>
+
+    <button onclick="orderNow()">Order Now</button>
+  </div>
+
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 Collection by Shanaya Sarees</p>
-  <p>Instagram: @collectionbyshanaya</p>
-</footer>
+<script>
+function changeImg(src) {
+  document.getElementById("mainImage").src = src;
+}
+
+function orderNow() {
+  let phone = "+91-9259047754"; // apna WhatsApp number
+  let msg =
+    "🛍️ New Saree Order%0A%0A" +
+    "Product: Banarasi Silk Saree%0A" +
+    "Price: ₹2,999%0A%0A" +
+    "Please share customer details.";
+
+  window.open("https://wa.me/" + phone + "?text=" + msg, "_blank");
+}
+</script>
 
 </body>
 </html>
